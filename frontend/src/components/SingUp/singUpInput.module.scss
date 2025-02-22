@@ -1,0 +1,107 @@
+.signUp {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	gap: 40px;
+	padding: 16px 24px;
+	border-radius: 10px;
+	box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
+}
+.loginInput1 {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		135deg,
+		rgba(253, 101, 0, 0.788),
+		rgb(225, 135, 74)
+	);
+
+	background-size: 200% 200%;
+	animation: gradientBG 6s ease infinite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.title {
+	font-size: 20px;
+	text-align: center;
+	line-height: auto;
+	color: #4d4d4d;
+}
+.signupForm input {
+	width: 100%;
+	padding: 12px 20px;
+	border-radius: 5px;
+	background-color: #e4e4e4;
+	border: none;
+}
+.signupForm {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.nameSection {
+	display: flex;
+	gap: 16px;
+	input {
+		width: 50%;
+	}
+}
+.checkBox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	label {
+		font-size: 12px;
+	}
+	input {
+		width: inherit;
+	}
+}
+
+.signupBtn {
+	padding: 14px 32px;
+	background-color: #eef5fc;
+	color: #abbed1;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 24px;
+}
+input:focus {
+	outline: 2px solid #0671e0;
+	border: 2px solid transparent;
+}
+input[type='checkbox'] {
+	width: 25px;
+	height: 25px;
+}
+input[type='checkbox']:checked {
+	width: 25px;
+	height: 25px;
+}
+input[type='password'] {
+	-webkit-text-security: square;
+}
+@media screen and (min-width: 768px) {
+	.loginInput1 {
+		width: 50%;
+	}
+	.signUp {
+		width: 500px;
+	}
+}

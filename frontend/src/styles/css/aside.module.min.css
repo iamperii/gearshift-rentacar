@@ -1,0 +1,1 @@
+.aside{display:none}@media screen and (min-width: 768px){.aside{display:block;width:50%;height:100vh;background-image:url("../../assets/images/asidee.jpg");background-repeat:no-repeat;background-size:100% 100%;background-position:center}}@media screen and (max-width: 850px){.aside{background-size:auto 100%}}

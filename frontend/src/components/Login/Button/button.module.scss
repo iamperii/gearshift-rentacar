@@ -1,0 +1,37 @@
+.title {
+	font-size: 20px;
+	text-align: center;
+	line-height: auto;
+	color: #4d4d4d;
+}
+.social {
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	display: flex;
+	background-color: #ffeded90;
+	justify-content: center;
+	padding: 6px;
+}
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	align-self:center;
+	gap: 37px;
+	padding: 0px 40px;
+}
+.social > img {
+	align-items: center;
+	width: 28px;
+}
+.btnContainer {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.signContainer{
+	align-self: center;
+	text-align: center;
+}

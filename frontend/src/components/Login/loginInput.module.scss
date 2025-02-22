@@ -1,0 +1,102 @@
+.loginInput1 {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(135deg, rgba(253, 101, 0, 0.788), rgb(225, 135, 74));
+	background-size: 200% 200%;
+	animation: gradientBG 6s ease infinite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.title {
+	font-size: 20px;
+	text-align: center;
+	color: #4d4d4d;
+	padding-bottom: 20px;
+}
+.login {
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.loginInput {
+	width: 300px;
+	padding: 16px 24px;
+	border-radius: 10px;
+	box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.427);
+	background-color: #ffffff;
+	align-self: center;
+}
+.input {
+	width: 100%;
+	padding: 12px 20px;
+	border-radius: 5px;
+	background-color: #e4e4e4;
+	border: none;
+}
+.loginForm {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+.remember {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	font-size: 14px;
+}
+input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+}
+// checked de
+input[type='password'] {
+	-webkit-text-security: square;
+}
+.forgot > a {
+	/* text-decoration: none; */
+	color: #0671e0;
+}
+.checkboxContainer {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+.loginBtn {
+	padding: 14px 32px;
+	background-color: #eef5fc;
+	color: #abbed1;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+}
+.line {
+	width: 100%;
+	background-color: #e4e4e4;
+	height: 1px;
+	margin-top: 16px;
+}
+.input:focus {
+	outline: 2px solid #0671e0;
+	border: 2px solid transparent;
+}
+
+@media screen and (min-width: 768px) {
+	.loginInput1 {
+		width: 50%;
+	}
+}
