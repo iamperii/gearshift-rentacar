@@ -1,8 +1,13 @@
 import { Route, Routes } from 'react-router';
 import Login from './pages/Login/Login';
-import Home from './pages/Home';
 import SignUp from './pages/SignUp/SignUp';
+import UserLayout from './layouts/UserLayout/UserLayout';
+import HomePage from './pages/HomePage';
 import './App.css';
+import OurFleet from './pages/OurFleet';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
 	return (
@@ -10,7 +15,19 @@ function App() {
 			<Routes>
 				<Route path="/login" element={<Login />} />
 				<Route path="/signup" element={<SignUp />} />
-				<Route path="/" element={<Home />} />
+
+				<Route
+					element={
+						<ProtectedRoute>
+							<UserLayout />
+						</ProtectedRoute>
+					}
+				>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/our-fleet" element={<OurFleet />} />
+				</Route>
 			</Routes>
 		</>
 	);

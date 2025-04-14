@@ -1,9 +1,16 @@
+import { useAuth } from '../../context/AuthContext';
 import Button from './Button/Button';
 import style from './loginInput.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const LoginInput = () => {
-	const handleSubmit = (e) => {
+	const { login } = useAuth();
+	const navigate = useNavigate();
+
+	const handleLogin = (e) => {
+		const fakeToken = 'abc123';
+		login(fakeToken);
+		navigate('/');
 		e.preventDefault();
 		console.log('logged');
 	};
@@ -39,7 +46,7 @@ const LoginInput = () => {
 						<button
 							type="submit"
 							className={style.loginBtn}
-							onClick={handleSubmit}
+							onClick={handleLogin}
 						>
 							Log In
 						</button>
