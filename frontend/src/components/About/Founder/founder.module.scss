@@ -1,0 +1,26 @@
+.founder {
+	display: flex;
+	padding: 100px;
+	gap: 200px;
+	img {
+		width: 576px;
+		height: 576px;
+		border-radius: 10px;
+	}
+	.founder-content {
+		display: flex;
+		flex-direction: column;
+		gap: 100px;
+		align-self: center;
+		p {
+			color: #8d8d91;
+			font-weight: 500;
+			line-height: 30px;
+		}
+		h1 {
+			line-height: 44px;
+			font-size: 32px;
+			font-weight: 600;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+.footer {
+	padding: 0px 100px;
+	background-color: black;
+	color: #d6d6d6;
+}
+.footer-bottom {
+	padding: 50px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.copyright {
+	padding: 50px 0px;
+	font-size: 24px;
+	// color: $vibrant-tangerine;
+}

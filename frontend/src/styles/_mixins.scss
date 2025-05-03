@@ -1,0 +1,25 @@
+@import './variables';
+@mixin button {
+	color: white;
+	background-color: $vibrant-tangerine;
+	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 16px 30px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 1.5px;
+	border: none;
+	cursor: pointer;
+	&:active {
+		transform: scale(0.94);
+		background-color: #d0500b;
+	}
+}
+
+@mixin flex-center($gap: 0px) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: $gap;
+}

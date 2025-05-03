@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.header-wrapper {
+	padding: 0px 100px;
+	background: #564f4f;
+	background-image: linear-gradient(#00000080 100%, #fff),
+		url(https://cdn.prod.website-files.com/6677ef5c2f59c6148debf7e0/6677ef5c2f59c6148debf7f4_bg-image.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	gap: 200px;
+	width: 100%;
+	height: 100vh;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav img {
+	width: 180px;
+}
+
+.header-wrapper nav,
+.pages {
+	@include flex-center(50px);
+}
+
+.pages a {
+	color: white;
+	font-weight: 900;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	padding: 5px 0;
+	font-size: 14px;
+	line-height: 20px;
+	text-decoration: none;
+	transition: all 0.2s;
+	&:hover {
+		// color: $vibrant-tangerine;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+	}
+	&.active {
+		color: $vibrant-tangerine;
+	}
+	
+}
+// .active {
+// 	color: $vibrant-tangerine;
+// }
+
+.dropdown {
+	color: white;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	transition: color 0.5s ease-in-out;
+	.downIcon {
+		transition: transform 0.5s ease-in-out;
+	}
+	&:hover {
+		color: $vibrant-tangerine;
+		cursor: pointer;
+		.downIcon {
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+.rent-button {
+	@include button;
+}

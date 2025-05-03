@@ -1,0 +1,44 @@
+.locations {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.location {
+  position: relative;
+}
+.location img {
+  width: 100%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  border-radius: 10px;
+}
+.location img:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.location p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.our-locations {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}

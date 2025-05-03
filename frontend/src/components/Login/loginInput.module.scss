@@ -1,12 +1,15 @@
+@import '../../styles/mixins';
 .loginInput1 {
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(135deg, rgba(253, 101, 0, 0.788), rgb(225, 135, 74));
+	background: linear-gradient(
+		135deg,
+		rgba(253, 101, 0, 0.788),
+		rgb(225, 135, 74)
+	);
 	background-size: 200% 200%;
 	animation: gradientBG 6s ease infinite;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex-center;
 }
 @keyframes gradientBG {
 	0% {
@@ -33,7 +36,7 @@
 	border-bottom-right-radius: 10px;
 }
 .loginInput {
-	width: 300px;
+	width: 500px;
 	padding: 16px 24px;
 	border-radius: 10px;
 	box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.427);
@@ -68,7 +71,6 @@ input[type='password'] {
 	-webkit-text-security: square;
 }
 .forgot > a {
-	/* text-decoration: none; */
 	color: #0671e0;
 }
 .checkboxContainer {
@@ -98,5 +100,10 @@ input[type='password'] {
 @media screen and (min-width: 768px) {
 	.loginInput1 {
 		width: 50%;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.loginInput {
+		width: 300px;
 	}
 }

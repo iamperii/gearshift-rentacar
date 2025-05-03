@@ -1,0 +1,23 @@
+@import '../../../styles/variables';
+.footer-nav {
+	li {
+		list-style: none;
+		font-size: 20px;
+		color: #d6d6d6;
+		a {
+			text-decoration: none;
+			&:hover {
+				color: $vibrant-tangerine;
+			}
+		}
+		.active {
+			color: $vibrant-tangerine;
+		}
+	}
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+h2 {
+	margin-bottom: 20px;
+}

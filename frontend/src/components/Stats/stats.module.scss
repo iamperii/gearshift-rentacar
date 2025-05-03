@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.stats-card {
+	padding: 100px;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+	flex-flow: column;
+	justify-content: flex-start;
+	align-items: center;
+	display: flex;
+	h2 {
+		color: $vibrant-tangerine;
+		letter-spacing: 2px;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 30px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	p {
+		font-size: 20px;
+		// font-weight: 600;
+		color: #8d8d91;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}

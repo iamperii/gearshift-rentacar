@@ -1,3 +1,4 @@
+@import '../../styles/_mixins.scss';
 .signUp {
 	width: 300px;
 	display: flex;
@@ -20,9 +21,7 @@
 
 	background-size: 200% 200%;
 	animation: gradientBG 6s ease infinite;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flex-center(10px);
 }
 @keyframes gradientBG {
 	0% {
@@ -55,16 +54,17 @@
 }
 .nameSection {
 	display: flex;
-	gap: 16px;
+	gap: 7px;
+	width: 100%;
 	input {
-		width: 50%;
+		width: 100%;
+	}
+	.input-box {
+		width: 100%;
 	}
 }
 .checkBox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 10px;
+	@include flex-center(10px);
 	label {
 		font-size: 12px;
 	}
@@ -103,5 +103,26 @@ input[type='password'] {
 	}
 	.signUp {
 		width: 500px;
+	}
+}
+.input-box {
+	width: 100%;
+}
+.error {
+	margin-top: 10px;
+	color: red;
+	font-size: 12px;
+	font-weight: 600;
+}
+.canSignUp {
+	background: $vibrant-tangerine;
+	padding: 14px 32px;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	font-size: 18px;
+	line-height: 24px;
+	&:hover{
+		cursor: pointer;
 	}
 }

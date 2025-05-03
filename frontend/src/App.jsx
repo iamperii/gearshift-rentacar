@@ -5,9 +5,10 @@ import UserLayout from './layouts/UserLayout/UserLayout';
 import HomePage from './pages/HomePage';
 import './App.css';
 import OurFleet from './pages/OurFleet';
-import About from './pages/About';
+import About from './pages/About/About';
 import Contact from './pages/Contact';
 import ProtectedRoute from './components/ProtectedRoute';
+import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 					<Route path="/about" element={<About />} />
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/our-fleet" element={<OurFleet />} />
+					<Route path="/forgot-password" element={<ForgotPassword />} />
 				</Route>
 			</Routes>
 		</>
