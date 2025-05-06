@@ -4,9 +4,9 @@ import SignUp from './pages/SignUp/SignUp';
 import UserLayout from './layouts/UserLayout/UserLayout';
 import HomePage from './pages/HomePage';
 import './App.css';
-import OurFleet from './pages/OurFleet';
+import OurFleet from './pages/OurFleet/OurFleet';
 import About from './pages/About/About';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import ProtectedRoute from './components/ProtectedRoute';
 import ForgotPassword from './pages/ForgotPassword';
 

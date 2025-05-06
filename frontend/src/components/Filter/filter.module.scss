@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+.filter-tab {
+	padding: 10px 20px;
+	color: rgb(141, 141, 145);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		color: $vibrant-tangerine;
+		cursor: pointer;
+		font-weight: 700;
+		transition: all 0.3s;
+	}
+}

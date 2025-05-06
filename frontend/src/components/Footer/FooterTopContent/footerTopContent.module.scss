@@ -78,18 +78,6 @@ a {
 		}
 	}
 	button {
-		// background-color: $vibrant-tangerine;
-		// color: var(--white);
-		// letter-spacing: 1.5px;
-		// text-transform: uppercase;
-		// border-radius: 5px;
-		// justify-content: center;
-		// align-items: center;
-		// padding: 16px 30px;
-		// font-size: 14px;
-		// font-weight: 600;
-		// line-height: 20px;
-		// transition: transform 0.2s, background-color 0.2s;
 		@include button;
 		border: none;
 	}

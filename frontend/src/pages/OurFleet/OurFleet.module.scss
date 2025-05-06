@@ -1,0 +1,15 @@
+.our-fleet {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	padding: 100px 100px;
+}
+
+.car-cards {
+	display: flex;
+	gap: 20px;
+}
+.filter-tabs{
+	display: flex;
+	justify-content: space-between;
+}

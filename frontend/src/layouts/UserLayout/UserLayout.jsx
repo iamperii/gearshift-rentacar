@@ -8,9 +8,9 @@ const UserLayout = () => {
 		<div className={style.userLayout}>
 			<Header />
 
-			<div className={style.outletContainer}>
+			<main className={style.outletContainer}>
 				<Outlet />
-			</div>
+			</main>
 
 			<Footer />
 		</div>

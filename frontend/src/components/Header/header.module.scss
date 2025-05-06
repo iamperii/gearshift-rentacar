@@ -41,18 +41,13 @@
 	text-decoration: none;
 	transition: all 0.2s;
 	&:hover {
-		// color: $vibrant-tangerine;
 		cursor: pointer;
 		transition: all 0.3s ease-in-out;
 	}
 	&.active {
 		color: $vibrant-tangerine;
 	}
-	
 }
-// .active {
-// 	color: $vibrant-tangerine;
-// }
 
 .dropdown {
 	color: white;

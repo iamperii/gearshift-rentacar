@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.contact {
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+.contact-form {
+	border: 1px solid #d6d6d6;
+	width: 700px;
+	border-radius: 20px;
+	padding: 60px 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	box-shadow: 0 3px 20px #0003;
+	.label {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		div {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+	}
+	input,
+	textarea {
+		padding: 10px 20px;
+		border-radius: 10px;
+		background-color: whitesmoke;
+		outline: none;
+		border: 1px solid #d6d6d6;
+		&:focus {
+			outline: 3px double $vibrant-tangerine;
+		}
+	}
+}
+.form-submit {
+	display: flex;
+	justify-content: space-between;
+	button {
+		@include button;
+	}
+}
+.icon {
+	margin-right: 10px;
+	border-radius: 30px;
+	padding: 11px;
+	background-color: $vibrant-tangerine;
+	&:hover {
+		transform: translateY(-20px);
+		transition: all 0.4s ease-out;
+		cursor: pointer;
+	}
+}

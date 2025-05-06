@@ -1,5 +1,5 @@
 import style from './ourLocations.module.scss';
-import location from '../../assets/images/location.png';
+import location from '../../assets/images/locations/location.png';
 const OurLocations = () => {
 	return (
 		<>
