@@ -89,10 +89,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16px;
+  gap: 7px;
+  width: 100%;
 }
 .nameSection input {
-  width: 50%;
+  width: 100%;
+}
+.nameSection .input-box {
+  width: 100%;
 }
 
 .checkBox {
@@ -116,8 +120,8 @@
 
 .signupBtn {
   padding: 14px 32px;
-  background-color: #eef5fc;
-  color: #abbed1;
+  background-color: rgba(255, 99, 15, 0.2588235294);
+  color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 18px;
@@ -150,4 +154,27 @@ input[type=password] {
   .signUp {
     width: 500px;
   }
+}
+.input-box {
+  width: 100%;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.canSignUp {
+  background: #ff7326;
+  padding: 14px 32px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.canSignUp:hover {
+  cursor: pointer;
 }

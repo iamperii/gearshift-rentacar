@@ -1,5 +1,9 @@
 import style from './ourLocations.module.scss';
-import location from '../../assets/images/locations/location.png';
+import jumeriah from '../../assets/images/locations/jumeriah.png';
+import jbr from '../../assets/images/locations/jbr.png';
+import downtownDubai from '../../assets/images/locations/downtownDubai.png';
+import dubaiMarina from '../../assets/images/locations/dubaiMarina.png';
+
 const OurLocations = () => {
 	return (
 		<>
@@ -7,20 +11,20 @@ const OurLocations = () => {
 				<h1>Our Locations</h1>
 				<div className={style.locations}>
 					<div className={style.location}>
-						<img src={location} alt="" />
+						<img src={jumeriah} alt="Palm Jumeriah" />
 						<p>Palm Jumeirah</p>
 					</div>
 					<div className={style.location}>
-						<img src={location} alt="" />
-						<p>Palm Jumeirah</p>
+						<img src={jbr} alt="JBR" />
+						<p>JBR</p>
 					</div>
 					<div className={style.location}>
-						<img src={location} alt="" />
-						<p>Palm Jumeirah</p>
+						<img src={downtownDubai} alt="Downtown Dubai" />
+						<p>Downtown Dubai</p>
 					</div>
 					<div className={style.location}>
-						<img src={location} alt="" />
-						<p>Palm Jumeirah</p>
+						<img src={dubaiMarina} alt="Dubai Marina" />
+						<p>Dubai Marina</p>
 					</div>
 				</div>
 			</div>

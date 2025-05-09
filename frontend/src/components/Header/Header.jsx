@@ -5,15 +5,6 @@ import { Link, NavLink } from 'react-router-dom';
 import style from './header.module.scss';
 
 const Header = () => {
-	const [dropdown, setDropdown] = useState({
-		carBrands: false,
-		pages: false,
-	});
-
-	const toggleDropdown = (key) => {
-		setDropdown((prev) => ({ ...prev, [key]: !prev[key] }));
-	};
-
 	return (
 		<>
 			<div className={style['header-wrapper']}>
@@ -46,27 +37,13 @@ const Header = () => {
 								Our Fleet
 							</NavLink>
 
-							<NavLink
-								className={style.dropdown}
-								onClick={() => toggleDropdown('carBrands')}
-							>
+							<NavLink className={style.dropdown}>
 								<span>Car Brands</span>
-								<FaAngleDown
-									className={`${style.downIcon} ${
-										dropdown.carBrands ? style.active : ''
-									}`}
-								/>
+								<FaAngleDown className={`${style.downIcon}`} />
 							</NavLink>
-							<NavLink
-								className={style.dropdown}
-								onClick={() => toggleDropdown('pages')}
-							>
+							<NavLink className={style.dropdown}>
 								<span>Pages</span>
-								<FaAngleDown
-									className={`${style.downIcon} ${
-										dropdown.pages ? style.active : ''
-									}`}
-								/>
+								<FaAngleDown className={`${style.downIcon}`} />
 							</NavLink>
 							<NavLink
 								to="/contact"

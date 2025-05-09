@@ -8,14 +8,38 @@ const OurFleet = () => {
 				<div className={style['filter-tabs']}>
 					<Filter title="Select Car Type" />
 					<Filter title="Select Car Brand" />
-					<Filter title="Select Car Pickup Location" />
-					<Filter title="Select Car Feature" />
+					<Filter title="Select Pickup Location" />
+					<Filter title="Select Feature" />
 				</div>
 				<div className={style['car-cards']}>
-					<Car />
-					<Car />
-					<Car />
-					<Car />
+					<Car
+						name="Porsche Cayenne Coupe"
+						price={5000}
+						speed={5800}
+						seats={5}
+						baggage={4}
+					/>
+					<Car
+						name="BMW M4 Competition"
+						price={1300}
+						speed={4700}
+						seats={5}
+						baggage={6}
+					/>
+					<Car
+						name="Ferrari 458"
+						price={3900}
+						speed={5800}
+						seats={2}
+						baggage={2}
+					/>
+					<Car
+						name="Porsche 992"
+						price={2100}
+						speed={5500}
+						seats={2}
+						baggage={3}
+					/>
 				</div>
 			</div>
 		</>

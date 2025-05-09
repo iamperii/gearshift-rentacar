@@ -1,5 +1,6 @@
 import style from './founder.module.scss';
-import founder from '../../../assets/images/founder.png';
+import founder from '../../../assets/images/about/founder.png';
+
 const Founder = () => {
 	return (
 		<>

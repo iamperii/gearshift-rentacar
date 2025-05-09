@@ -1,7 +1,7 @@
 import style from './ourFeatures.module.scss';
 import search from '../../assets/images/search.png';
 import carIcon from '../../assets/images/carIcon.png';
-import enquiry from '../../assets/images/enquiry.png';
+import enquiry from '../../assets/images/about/enquiry.png';
 import drive from '../../assets/images/drive.png';
 
 const OurFeatures = () => {

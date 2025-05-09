@@ -7,7 +7,7 @@ import './App.css';
 import OurFleet from './pages/OurFleet/OurFleet';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-import ProtectedRoute from './components/ProtectedRoute';
+// import ProtectedRoute from './components/ProtectedRoute';
 import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
 
 				<Route
 					element={
-						<ProtectedRoute>
+						// <ProtectedRoute>
 							<UserLayout />
-						</ProtectedRoute>
+						// </ProtectedRoute>
 					}
 				>
 					<Route path="/" element={<HomePage />} />
