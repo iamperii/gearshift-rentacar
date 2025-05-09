@@ -1,39 +1,43 @@
 import style from './Car.module.scss';
-import speed from '../../assets/images/speed.png';
+import speedImg from '../../assets/images/carIcons/speed.png';
+import automaticImg from '../../assets/images/carIcons/automatic.png';
+import seatsImg from '../../assets/images/carIcons/seats.png';
+import baggageImg from '../../assets/images/carIcons/baggage.png';
 import car from '../../assets/images/car.png';
 import { Link } from 'react-router';
-import Tilt from 'react-parallax-tilt';
-const Car = () => {
+// import Tilt from 'react-parallax-tilt';
+
+const Car = ({ name, price, speed, seats, baggage }) => {
 	return (
 		<>
-				<Tilt className={style['car-card']}>
-					<img src={car} alt={car} className={style['car-img']} />
-					<h2>Porsche Cayenne Coupe</h2>
-					<div className={style.price}>
-						AED <p>5000</p> / DAY
+			<div className={style['car-card']}>
+				<img src={car} alt={car} className={style['car-img']} />
+				<h3>{name}</h3>
+				<div className={style.price}>
+					AED <p>{price}</p> / DAY
+				</div>
+				<div className={style['car-features']}>
+					<div>
+						<img src={speedImg} alt="speed-image" />
+						<p>{speed}</p>
 					</div>
-					<div className={style['car-features']}>
-						<div>
-							<img src={speed} alt="speed-image" />
-							<p>5000</p>
-						</div>
-						<div>
-							<img src={speed} alt="speed-image" />
-							<p>Atuomtic</p>
-						</div>
-						<div>
-							<img src={speed} alt="speed-image" />
-							<p>5</p>
-						</div>
-						<div>
-							<img src={speed} alt="speed-image" />
-							<p>4</p>
-						</div>
+					<div>
+						<img src={automaticImg} alt="automatic-image" />
+						<p>Atuomatic</p>
 					</div>
-					<Link>
-						<button>See full deatils</button>
-					</Link>
-				</Tilt>
+					<div>
+						<img src={seatsImg} alt="seats-image" />
+						<p>{seats}</p>
+					</div>
+					<div>
+						<img src={baggageImg} alt="baggage-image" />
+						<p>{baggage}</p>
+					</div>
+				</div>
+				<Link>
+					<button>See full deatils</button>
+				</Link>
+			</div>
 		</>
 	);
 };

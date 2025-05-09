@@ -5,7 +5,7 @@
 	background: linear-gradient(
 		135deg,
 		rgba(253, 101, 0, 0.788),
-		rgb(225, 135, 74)
+		rgb(255, 104, 4)
 	);
 	background-size: 200% 200%;
 	animation: gradientBG 6s ease infinite;
@@ -80,8 +80,9 @@ input[type='password'] {
 }
 .loginBtn {
 	padding: 14px 32px;
-	background-color: #eef5fc;
-	color: #abbed1;
+	background-color: #ff630f42;
+	color: #fff;
+	font-weight: 700;
 	border: none;
 	border-radius: 8px;
 	font-size: 16px;

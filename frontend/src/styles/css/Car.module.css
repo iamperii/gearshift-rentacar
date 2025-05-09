@@ -40,12 +40,12 @@
   background-color: #f6f6f6;
   border-radius: 12px;
   padding: 10px;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,8 +54,8 @@
   text-align: center;
 }
 .car-features img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .car-img {

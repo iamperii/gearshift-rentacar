@@ -1,5 +1,6 @@
 import style from './journey.module.scss';
 import cars from '../../../assets/images/cars.png';
+
 const Journey = () => {
 	return (
 		<>

@@ -1,0 +1,27 @@
+.filter-tab {
+  padding: 15px 25px;
+  color: rgb(141, 141, 145);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid rgba(255, 115, 38, 0);
+  border-radius: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #8d8d91;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1490196078);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1490196078);
+  gap: 10px;
+}
+.filter-tab:hover {
+  color: #ff7326;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
