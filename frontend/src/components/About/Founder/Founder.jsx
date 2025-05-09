@@ -5,7 +5,7 @@ const Founder = () => {
 	return (
 		<>
 			<div>
-				<div className={style.founder}>
+				<div className={style.founder} data-aos="fade-up">
 					<img src={founder} alt="founder-image" />
 					<div className={style['founder-content']}>
 						<div>

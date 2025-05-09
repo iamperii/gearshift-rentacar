@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router';
 import Login from './pages/Login/Login';
 import SignUp from './pages/SignUp/SignUp';
-import UserLayout from './layouts/UserLayout/UserLayout';
+import UserLayout from './layouts/UserLayout';
 import HomePage from './pages/HomePage';
 import './App.css';
 import OurFleet from './pages/OurFleet/OurFleet';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-// import ProtectedRoute from './components/ProtectedRoute';
+import ProtectedRoute from './components/ProtectedRoute';
 import ForgotPassword from './pages/ForgotPassword';
 
 function App() {
@@ -19,9 +19,9 @@ function App() {
 
 				<Route
 					element={
-						// <ProtectedRoute>
+						<ProtectedRoute>
 							<UserLayout />
-						// </ProtectedRoute>
+						</ProtectedRoute>
 					}
 				>
 					<Route path="/" element={<HomePage />} />

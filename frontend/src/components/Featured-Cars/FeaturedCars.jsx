@@ -4,7 +4,7 @@ import Car from '../Car/Car';
 const FeaturedCars = () => {
 	return (
 		<>
-			<div className={style.featuredCtn}>
+			<div className={style.featuredCtn} data-aos="fade-up">
 				<div className={style.featuredHead}>
 					<h1>FEATURED CARS</h1>
 					<Link to="/our-fleet">

@@ -4,7 +4,7 @@ const Contact = () => {
 	return (
 		<>
 			<section className={style.contact}>
-				<div className={style['left-section']}>
+				<div className={style['left-section']} data-aos="fade-up">
 					<div>
 						<h1>Get in touch</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -29,7 +29,7 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<form action="" className={style['contact-form']}>
+				<form action="" className={style['contact-form']} data-aos="fade-up">
 					<div className={style.label}>
 						<div>
 							<label htmlFor="">First Name</label>

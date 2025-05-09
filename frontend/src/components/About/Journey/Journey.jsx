@@ -4,7 +4,7 @@ import cars from '../../../assets/images/cars.png';
 const Journey = () => {
 	return (
 		<>
-			<div className={style.journey}>
+			<div className={style.journey} data-aos="fade-up">
 				<div className={style['journey-content']}>
 					<div>
 						<h1>Our Journey</h1>

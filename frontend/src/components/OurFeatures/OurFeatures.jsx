@@ -7,7 +7,7 @@ import drive from '../../assets/images/drive.png';
 const OurFeatures = () => {
 	return (
 		<>
-			<div className={style['our-features']}>
+			<div className={style['our-features']} data-aos="fade-up">
 				<div className={style['feature']}>
 					<div>
 						<img src={search} alt="search-icon" />

@@ -8,10 +8,10 @@ const Home = () => {
 		<>
 			<div className={style.home}>
 				<div className={style['stats-cards']}>
-					<Stats value="10+" title="Years of Experience" />
-					<Stats value="1000+" title="Happy Clients" />
-					<Stats value="200+" title="Vehicles" />
-					<Stats value="10+" title="Locations" />
+					<Stats value={10} title="Years of Experience" />
+					<Stats value={1000} title="Happy Clients" />
+					<Stats value={200} title="Vehicles" />
+					<Stats value={10} title="Locations" />
 				</div>
 				<FeaturedCars />
 				<OurLocations />

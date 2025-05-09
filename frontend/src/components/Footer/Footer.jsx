@@ -5,9 +5,11 @@ const Footer = () => {
 	return (
 		<>
 			<div className={style.footer}>
-				<FooterTopContent />
+				<div data-aos="fade-up">
+					<FooterTopContent />
+				</div>
 				<hr />
-				<div className={style['footer-bottom']}>
+				<div className={style['footer-bottom']} data-aos="fade-up">
 					<FooterBottomContent
 						title="Pages"
 						links={[
@@ -41,7 +43,10 @@ const Footer = () => {
 				</div>
 				<hr />
 				<div className={style.copyright}>
-					<p>Copyright © GearShift | Designed by <a href="https://github.com/iamperii">M.Peri</a></p>
+					<p>
+						Copyright © GearShift | Designed by{' '}
+						<a href="https://github.com/iamperii">M.Peri</a>
+					</p>
 				</div>
 			</div>
 		</>

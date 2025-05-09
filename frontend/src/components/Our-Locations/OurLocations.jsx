@@ -7,7 +7,7 @@ import dubaiMarina from '../../assets/images/locations/dubaiMarina.png';
 const OurLocations = () => {
 	return (
 		<>
-			<div className={style['our-locations']}>
+			<div className={style['our-locations']} data-aos="fade-up">
 				<h1>Our Locations</h1>
 				<div className={style.locations}>
 					<div className={style.location}>
