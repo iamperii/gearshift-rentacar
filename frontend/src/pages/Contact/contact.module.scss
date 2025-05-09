@@ -9,7 +9,7 @@
 	border: 1px solid #d6d6d6;
 	width: 700px;
 	border-radius: 20px;
-	padding: 60px 50px;
+	padding: 50px 50px;
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -18,19 +18,26 @@
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		font-size: 20px;
 		div {
 			display: flex;
 			flex-direction: column;
-			gap: 5px;
+			gap: 8px;
+		}
+		input {
+			width: 250px;
+			height: 60px;
 		}
 	}
 	input,
 	textarea {
+		width: 100%;
 		padding: 10px 20px;
 		border-radius: 10px;
 		background-color: whitesmoke;
 		outline: none;
 		border: 1px solid #d6d6d6;
+
 		&:focus {
 			outline: 3px double $vibrant-tangerine;
 		}
@@ -52,5 +59,33 @@
 		transform: translateY(-20px);
 		transition: all 0.4s ease-out;
 		cursor: pointer;
+	}
+}
+.left-section {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	h1 {
+		color: #1a1a1a;
+		font-size: 60px;
+	}
+	p {
+		color: #8d8d91;
+		font-weight: 500;
+		line-height: 30px;
+	}
+}
+.info {
+	margin-bottom: 30px;
+	display: flex;
+	h3{
+		font-size: 20px;
+    font-weight: 600;
+	}
+	a {
+		text-decoration: none;
+		color: #1a1a1a;
+		line-height: 26px;
 	}
 }

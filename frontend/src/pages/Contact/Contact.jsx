@@ -5,21 +5,26 @@ const Contact = () => {
 		<>
 			<section className={style.contact}>
 				<div className={style['left-section']}>
-					<h1>Get in touch</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-					<div className={style.info}>
-						<Mail />
-						<div>
-							<h3>Email </h3>
-							<a href="mailto:info@gearshift.ae">info@gearshift.ae</a>
-						</div>
+					<div>
+						<h1>Get in touch</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 					</div>
 
-					<div className={style.info}>
-						<Phone />
-						<div>
-							<h3>Phone </h3>
-							<a href="tel:+971 12 345 6789">info@gearshift.ae</a>
+					<div className={style['info-container']}>
+						<div className={style.info}>
+							<Mail className={style.icon} size={50} color="white" />
+							<div>
+								<h3>Email </h3>
+								<a href="mailto:info@gearshift.ae">info@gearshift.ae</a>
+							</div>
+						</div>
+
+						<div className={style.info}>
+							<Phone className={style.icon} size={50} color="white" />
+							<div>
+								<h3>Phone </h3>
+								<a href="tel:+971 12 345 6789">+971 12 345 6789</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -49,10 +54,10 @@ const Contact = () => {
 						rows={10}
 						name="message"
 						id="message"
-						placeholder="message"
+						placeholder="Message"
 					></textarea>
 					<div className={style['form-submit']}>
-						<button>View Our Fleet</button>
+						<button>Send message</button>
 						<nav className={style.socials}>
 							<Twitter size={50} className={style.icon} color="white" />
 							<Instagram size={50} className={style.icon} color="white" />
