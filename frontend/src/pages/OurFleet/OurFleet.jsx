@@ -1,6 +1,11 @@
 import Filter from '../../components/Filter/Filter';
 import Car from '../../components/Car/Car';
 import style from './OurFleet.module.scss';
+import car1 from '../../assets/images/car-1.png';
+import car2 from '../../assets/images/car-2.png';
+import car3 from '../../assets/images/car-3.png';
+import car4 from '../../assets/images/car-1.png';
+
 const OurFleet = () => {
 	return (
 		<>
@@ -18,6 +23,7 @@ const OurFleet = () => {
 						speed={5800}
 						seats={5}
 						baggage={4}
+						carIMG={car1}
 					/>
 					<Car
 						name="BMW M4 Competition"
@@ -25,6 +31,7 @@ const OurFleet = () => {
 						speed={4700}
 						seats={5}
 						baggage={6}
+						carIMG={car2}
 					/>
 					<Car
 						name="Ferrari 458"
@@ -32,6 +39,7 @@ const OurFleet = () => {
 						speed={5800}
 						seats={2}
 						baggage={2}
+						carIMG={car3}
 					/>
 					<Car
 						name="Porsche 992"
@@ -39,6 +47,7 @@ const OurFleet = () => {
 						speed={5500}
 						seats={2}
 						baggage={3}
+						carIMG={car4}
 					/>
 				</div>
 			</div>

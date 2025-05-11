@@ -6,16 +6,14 @@ import { Link, useNavigate } from 'react-router-dom';
 const LoginInput = () => {
 	const { login } = useAuth();
 	const navigate = useNavigate();
-	
-const user = localStorage.getItem('user');
-		console.log(user);
+
+	const user = localStorage.getItem('user');
 	const handleLogin = (e) => {
 		const fakeToken = 'abc123';
 		login(fakeToken);
 		navigate('/');
 		e.preventDefault();
 		console.log('logged');
-		
 	};
 	return (
 		<>

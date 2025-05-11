@@ -2,11 +2,11 @@ import { RegisterFormSchemas } from '../../schemas/RegisterForm.js';
 import style from './singUpInput.module.scss';
 import { useFormik } from 'formik';
 import { ToastContainer, toast } from 'react-toastify';
-// import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import 'react-toastify/dist/ReactToastify.css';
 
 const SignUpInput = () => {
-	// const navigate = useNavigate();
+	const navigate = useNavigate();
 	const {
 		values,
 		errors,
@@ -36,7 +36,9 @@ const SignUpInput = () => {
 			localStorage.setItem('user', JSON.stringify(user));
 			toast.success('🎉 Signed up successfully!');
 			actions.resetForm();
-			// navigate('/login');
+			setTimeout(() => {
+				navigate('/login');
+			}, 5000);
 		},
 		validateOnBlur: true,
 		validateOnChange: false,
@@ -149,7 +151,7 @@ const SignUpInput = () => {
 								: style.canSignUp
 						}
 					>
-						Send Verification Code
+						Sign in
 					</button>
 				</form>
 			</div>

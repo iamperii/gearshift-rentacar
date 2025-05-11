@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router';
+import { useLocation, useNavigate } from 'react-router';
 import style from './carDetails.module.scss';
 import carImg from '../../assets/images/car-1.png';
 import speedImg from '../../assets/images/carIcons/speed.png';
@@ -15,13 +15,37 @@ import gpsImg from '../../assets/images/features/gps.png';
 import sensorsImg from '../../assets/images/features/sensors.png';
 import sunroofImg from '../../assets/images/features/sunroof.png';
 import { Mail, Phone } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
+import { useState } from 'react';
+import Modal from '../../components/Modal/Modal';
 
 const CarDetails = () => {
 	const location = useLocation();
+	const navigate = useNavigate();
 	const info = location.state;
-	console.log(info);
+
+	const { user } = useAuth();
+	const [showModal, setShowModal] = useState(false);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		if (!user) {
+			setShowModal(true);
+		} else {
+			navigate('/contact');
+		}
+	};
+
+	
+	const closeModal = () => {
+		setShowModal(false); 
+	};
+
 	return (
 		<>
+			<Modal show={showModal} onClose={closeModal} />
+
 			<section className={style['car-details']}>
 				<div className={style['left-section']}>
 					<div className={style['image-section']}>
@@ -42,15 +66,17 @@ const CarDetails = () => {
 						</div>
 						<hr />
 						<h1>Interested in Renting This Car?</h1>
-						<Link to={'/contact'}>
-							<button className={style.submit}>Submit an Enquiry</button>
-						</Link>
+						<a>
+							<button className={style.submit} onClick={handleSubmit}>
+								Submit an Enquiry
+							</button>
+						</a>
 						<hr />
 						<div>
 							<h2>Contact</h2>
 							<div className={style['contact-info-container']}>
 								<div className={style['contact-info']}>
-									<Mail color="#ff7326"  size={30}/>
+									<Mail color="#ff7326" size={30} />
 									<a href="mailto:info@gearshift.ae">info@gearshift.ae</a>
 								</div>
 								<div className={style['contact-info']}>
@@ -157,37 +183,37 @@ const CarDetails = () => {
 							<h1 className={style.featuresTitle}>Features</h1>
 							<div className={style['car-features']}>
 								<div className={style['car-feature']}>
-									<img src={bluetoothImg} alt="	" />
+									<img src={bluetoothImg} alt="Bluetooth feature" />
 									<p>Bluetooth</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={cruiseImg} alt="	" />
+									<img src={cruiseImg} alt="Cruise Control feature" />
 									<p>Cruise Control</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={gpsImg} alt="	" />
+									<img src={gpsImg} alt="Built-in GPS feature" />
 									<p>Built-in GPS</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={cameraImg} alt="	" />
+									<img src={cameraImg} alt="Rear Camera feature" />
 									<p>Rear Camera</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={chargingImg} alt="	" />
+									<img src={chargingImg} alt="Wireless Charging feature" />
 									<p>Wireless Charging</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={sunroofImg} alt="	" />
+									<img src={sunroofImg} alt="Sunroof feature" />
 									<p>Sunroof</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={sensorsImg} alt="	" />
+									<img src={sensorsImg} alt="Parking Sensors feature" />
 									<p>Parking Sensors</p>
 								</div>
 							</div>

@@ -144,3 +144,27 @@ hr {
 	font-weight: 700;
 	transform: all 0.7s ease;
 }
+
+.modalCustom {
+  .modal-dialog {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .modal-content {
+    background-color: rgba(255, 255, 255, 0.95); // azca şəffaf ağ fon
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  button {
+    width: 45%;
+  }
+}
