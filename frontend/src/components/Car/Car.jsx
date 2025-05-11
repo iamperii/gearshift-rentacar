@@ -3,11 +3,10 @@ import speedImg from '../../assets/images/carIcons/speed.png';
 import automaticImg from '../../assets/images/carIcons/automatic.png';
 import seatsImg from '../../assets/images/carIcons/seats.png';
 import baggageImg from '../../assets/images/carIcons/baggage.png';
-import car from '../../assets/images/car.png';
 import { Link } from 'react-router';
 import Tilt from 'react-parallax-tilt';
 
-const Car = ({ name, price, speed, seats, baggage }) => {
+const Car = ({ name, price, speed, seats, baggage,carIMG }) => {
 	const carInfo = {
 		name: name,
 		price: price,
@@ -18,7 +17,7 @@ const Car = ({ name, price, speed, seats, baggage }) => {
 	return (
 		<>
 			<div className={style['car-card']}>
-				<img src={car} alt={car} className={style['car-img']} />
+				<img src={carIMG} alt={name} className={style['car-img']} />
 				<h3>{name}</h3>
 				<div className={style.price}>
 					AED <p>{price}</p> / DAY

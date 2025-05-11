@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router';
 import style from './carDetails.module.scss';
-import carImg from '../../assets/images/car.png';
+import carImg from '../../assets/images/car-1.png';
 import speedImg from '../../assets/images/carIcons/speed.png';
 import automaticImg from '../../assets/images/carIcons/automatic.png';
 import seatsImg from '../../assets/images/carIcons/seats.png';
