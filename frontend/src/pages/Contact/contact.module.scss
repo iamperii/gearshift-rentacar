@@ -87,5 +87,8 @@
 		text-decoration: none;
 		color: #1a1a1a;
 		line-height: 26px;
+		&:hover{
+			color:$vibrant-tangerine
+		}
 	}
 }

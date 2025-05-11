@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Banner from '../Banner/Banner';
 import { FaAngleDown } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';

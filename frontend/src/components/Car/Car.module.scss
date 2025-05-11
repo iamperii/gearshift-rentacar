@@ -3,7 +3,7 @@
 	width: 25%;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
 	background-color: white;
 	padding: 10px;
 	border-radius: 12px;
@@ -18,7 +18,7 @@
 .car-features {
 	background-color: #f6f6f6;
 	border-radius: 12px;
-	padding: 10px;
+	padding: 5px;
 	font-size: 14px;
 	display: flex;
 	justify-content: space-around;
@@ -33,7 +33,7 @@
 }
 
 .car-img {
-	border-radius: 10px;
+	border-radius: 12px;
 }
 .price {
 	display: flex;

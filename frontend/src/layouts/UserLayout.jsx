@@ -4,6 +4,7 @@ import Footer from '../components/Footer/Footer';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScroolTop from '../utils/ScroolTop';
 
 const UserLayout = () => {
 	useEffect(() => {
@@ -14,6 +15,7 @@ const UserLayout = () => {
 	}, []);
 	return (
 		<div>
+			<ScroolTop />
 			<Header />
 
 			<main>

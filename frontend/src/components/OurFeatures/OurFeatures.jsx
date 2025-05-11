@@ -12,28 +12,28 @@ const OurFeatures = () => {
 					<div>
 						<img src={search} alt="search-icon" />
 					</div>
-					<h1>Browse Our Fleet</h1>
+					<h3>Browse Our Fleet</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
 						<img src={carIcon} alt="search-icon" />
 					</div>
-					<h1>Browse Our Fleet</h1>
+					<h3>Select You Vehicle</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
 						<img src={enquiry} alt="enquiry-icon" />
 					</div>
-					<h1>Browse Our Fleet</h1>
+					<h3>Submit an Enquiry</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
 						<img src={drive} alt="drive-icon" />
 					</div>
-					<h1>Browse Our Fleet</h1>
+					<h3>Pick Up & Drive</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 			</div>

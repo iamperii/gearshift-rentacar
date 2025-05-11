@@ -8,9 +8,16 @@ import { Link } from 'react-router';
 import Tilt from 'react-parallax-tilt';
 
 const Car = ({ name, price, speed, seats, baggage }) => {
+	const carInfo = {
+		name: name,
+		price: price,
+		speed: speed,
+		seats: seats,
+		baggage: baggage,
+	};
 	return (
 		<>
-			<Tilt className={style['car-card']}>
+			<div className={style['car-card']}>
 				<img src={car} alt={car} className={style['car-img']} />
 				<h3>{name}</h3>
 				<div className={style.price}>
@@ -34,10 +41,10 @@ const Car = ({ name, price, speed, seats, baggage }) => {
 						<p>{baggage}</p>
 					</div>
 				</div>
-				<Link>
+				<Link to={`/cars/${name}`} state={carInfo}>
 					<button>See full deatils</button>
 				</Link>
-			</Tilt>
+			</div>
 		</>
 	);
 };

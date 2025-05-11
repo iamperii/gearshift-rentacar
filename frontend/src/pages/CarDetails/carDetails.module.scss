@@ -1,0 +1,146 @@
+@import '../../styles/_mixins.scss';
+@import '../../styles/variables';
+
+.car-details {
+	padding: 50px 100px;
+	width: 100%;
+	display: flex;
+	gap: 100px;
+}
+.left-section {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.price {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	p {
+		font-size: 30px;
+		font-weight: 700;
+	}
+}
+.submit-section {
+	border: 1px solid #d6d6d6;
+	border-radius: 20px;
+	padding: 50px 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	box-shadow: 0 3px 20px #0003;
+}
+.image-section {
+	img {
+		border-radius: 10px;
+		width: 630px;
+	}
+	.image-section-bottom {
+		display: flex;
+		gap: 10px;
+		img {
+			width: 150px;
+		}
+	}
+}
+
+.info-section {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	.description {
+		font-family: Thicccboi, sans-serif;
+		color: #8d8d91;
+		font-weight: 500;
+		line-height: 30px;
+	}
+	.car-name {
+		font-size: 35px;
+	}
+}
+.info-icons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.info-icon {
+	img {
+		width: 20px;
+	}
+	display: flex;
+	gap: 10px;
+	font-size: 14px;
+	border-radius: 20px;
+	align-items: center;
+	box-shadow: 0 1px 6px #0003;
+	padding: 6px 12px;
+}
+
+.specifications-section {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.specifications-detail {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	background-color: whitesmoke;
+	color: #1a1a1a;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.detail-value {
+	font-weight: 600;
+}
+
+.car-features {
+	display: grid;
+	grid-template-columns: repeat(3, 200px);
+	row-gap: 20px;
+	column-gap: 10px;
+}
+.featuresTitle {
+	margin-bottom: 20px;
+}
+.car-feature {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	img {
+		width: 40px;
+	}
+}
+hr {
+	border: 1px solid lightgray;
+}
+.submit {
+	@include button;
+	&:hover {
+		transform: scale(0.95);
+	}
+}
+
+.contact-info-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.contact-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	align-self: flex-start;
+	a{
+		text-decoration: none;
+	}
+}
+.contact-info a:hover {
+	color: $vibrant-tangerine;
+	text-decoration: underline;
+	font-weight: 700;
+	transform: all 0.7s ease;
+}
