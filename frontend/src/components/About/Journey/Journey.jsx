@@ -16,7 +16,7 @@ const Journey = () => {
 						</p>
 					</div>
 					<div>
-						<h1>Our Journey</h1>
+						<h1>Our Mission</h1>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut

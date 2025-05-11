@@ -4,7 +4,7 @@ import Car from '../Car/Car';
 import car1 from '../../assets/images/car-1.png';
 import car2 from '../../assets/images/car-2.png';
 import car3 from '../../assets/images/car-3.png';
-import car4 from '../../assets/images/car-1.png';
+import car4 from '../../assets/images/car-4.png';
 
 const FeaturedCars = () => {
 	return (

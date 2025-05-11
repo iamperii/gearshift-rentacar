@@ -45,7 +45,9 @@ const Footer = () => {
 				<div className={style.copyright}>
 					<p>
 						Copyright © GearShift | Designed by{' '}
-						<a href="https://github.com/iamperii">M.Peri</a>
+						<a target="_blank" href="https://github.com/iamperii">
+							M.Peri
+						</a>
 					</p>
 				</div>
 			</div>
