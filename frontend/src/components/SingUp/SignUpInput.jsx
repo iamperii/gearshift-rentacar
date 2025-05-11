@@ -151,7 +151,7 @@ const SignUpInput = () => {
 								: style.canSignUp
 						}
 					>
-						Sign in
+						Sign up
 					</button>
 				</form>
 			</div>

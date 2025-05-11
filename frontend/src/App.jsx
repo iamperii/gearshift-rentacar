@@ -7,7 +7,6 @@ import './App.css';
 import OurFleet from './pages/OurFleet/OurFleet';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
-// import ProtectedRoute from './components/ProtectedRoute';
 import ForgotPassword from './pages/ForgotPassword';
 import CarDetails from './pages/CarDetails/CarDetails';
 

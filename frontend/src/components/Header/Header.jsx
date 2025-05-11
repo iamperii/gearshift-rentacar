@@ -1,5 +1,4 @@
 import Banner from '../Banner/Banner';
-import { FaAngleDown } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 import style from './header.module.scss';
 
@@ -34,15 +33,6 @@ const Header = () => {
 								className={({ isActive }) => (isActive ? style.active : '')}
 							>
 								Our Fleet
-							</NavLink>
-
-							<NavLink className={style.dropdown}>
-								<span>Car Brands</span>
-								<FaAngleDown className={`${style.downIcon}`} />
-							</NavLink>
-							<NavLink className={style.dropdown}>
-								<span>Pages</span>
-								<FaAngleDown className={`${style.downIcon}`} />
 							</NavLink>
 							<NavLink
 								to="/contact"
