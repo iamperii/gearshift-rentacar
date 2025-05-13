@@ -66,4 +66,4 @@ cd gearshift-rentacar
 npm install
 
 # 4. Layihəni lokal serverdə işə salın
-npm start
+npm run dev
