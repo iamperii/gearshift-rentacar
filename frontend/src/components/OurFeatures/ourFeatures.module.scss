@@ -1,19 +1,17 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .our-features {
-	padding: 100px;
+	padding: $common-padding;
 	display: flex;
-	// justify-content: space-between;
 	background-color: #f6f6f6;
 	gap: 20px;
 }
 .feature {
-	display: flex;
-	flex-direction: column;
+	@include flex-column-gap(10px);
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	gap: 10px;
 	div {
 		background-color: $vibrant-tangerine;
 		border-radius: 50%;
@@ -28,5 +26,32 @@
 	}
 	p{
 		color: #8d8d91;
+	}
+}
+
+@media (max-width: 1024px) {
+	.our-features {
+		.feature {
+			flex: 1 1 45%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.our-features {
+		flex-direction: column;
+		padding: 2rem 1rem;
+
+		.feature {
+			flex: 1 1 100%;
+
+			h3 {
+				font-size: 1.1rem;
+			}
+
+			p {
+				font-size: 0.95rem;
+			}
+		}
 	}
 }

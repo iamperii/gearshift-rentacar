@@ -1,6 +1,9 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
 .founder {
+	padding: $common-padding;
 	display: flex;
-	padding: 100px;
 	gap: 200px;
 	img {
 		width: 576px;
@@ -8,19 +11,44 @@
 		border-radius: 10px;
 	}
 	.founder-content {
-		display: flex;
-		flex-direction: column;
-		gap: 100px;
+	  @include flex-column-gap(100px);
 		align-self: center;
+		
 		p {
 			color: #8d8d91;
-			font-weight: 500;
-			line-height: 30px;
+			@include text-regular-lg;
 		}
 		h1 {
 			line-height: 44px;
 			font-size: 32px;
 			font-weight: 600;
+		}
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.founder {
+		flex-direction: column;
+		gap: 2rem;
+
+		img {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.founder {
+		padding: 2rem 1rem;
+
+		.founder-content {
+			h1 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.95rem;
+			}
 		}
 	}
 }

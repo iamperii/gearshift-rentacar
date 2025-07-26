@@ -51,9 +51,7 @@
 	border: none;
 }
 .loginForm {
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
+	@include flex-column-gap(32px);
 }
 .remember {
 	display: flex;

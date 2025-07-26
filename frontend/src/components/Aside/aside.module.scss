@@ -11,6 +11,12 @@
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
 		background-position: center;
+		a{
+			margin: 5px;
+			font-size: 25px;
+			display: flex;
+			align-items:center;
+		}
 	}
 }
 @media screen and (max-width: 850px) {

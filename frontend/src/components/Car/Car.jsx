@@ -4,9 +4,8 @@ import automaticImg from '../../assets/images/carIcons/automatic.png';
 import seatsImg from '../../assets/images/carIcons/seats.png';
 import baggageImg from '../../assets/images/carIcons/baggage.png';
 import { Link } from 'react-router';
-import Tilt from 'react-parallax-tilt';
 
-const Car = ({ name, price, speed, seats, baggage,carIMG }) => {
+const Car = ({ name, price, speed, seats, baggage, carIMG }) => {
 	const carInfo = {
 		name: name,
 		price: price,
@@ -17,26 +16,31 @@ const Car = ({ name, price, speed, seats, baggage,carIMG }) => {
 	return (
 		<>
 			<div className={style['car-card']}>
-				<img src={carIMG} alt={name} className={style['car-img']} />
+				<img
+					src={carIMG}
+					alt={name}
+					className={style['car-img']}
+					loading="eager"
+				/>
 				<h3>{name}</h3>
 				<div className={style.price}>
 					AED <p>{price}</p> / DAY
 				</div>
 				<div className={style['car-features']}>
 					<div>
-						<img src={speedImg} alt="speed-image" />
+						<img loading="eager" src={speedImg} alt="speed-image" />
 						<p>{speed}</p>
 					</div>
 					<div>
-						<img src={automaticImg} alt="automatic-image" />
+						<img loading="eager" src={automaticImg} alt="automatic-image" />
 						<p>Atuomatic</p>
 					</div>
 					<div>
-						<img src={seatsImg} alt="seats-image" />
+						<img loading="eager" src={seatsImg} alt="seats-image" />
 						<p>{seats}</p>
 					</div>
 					<div>
-						<img src={baggageImg} alt="baggage-image" />
+						<img loading="eager" src={baggageImg} alt="baggage-image" />
 						<p>{baggage}</p>
 					</div>
 				</div>

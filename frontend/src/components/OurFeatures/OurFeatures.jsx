@@ -10,28 +10,28 @@ const OurFeatures = () => {
 			<div className={style['our-features']} data-aos="fade-up">
 				<div className={style['feature']}>
 					<div>
-						<img src={search} alt="search-icon" />
+						<img loading="eager" src={search} alt="search-icon" />
 					</div>
 					<h3>Browse Our Fleet</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
-						<img src={carIcon} alt="search-icon" />
+						<img loading="eager" src={carIcon} alt="search-icon" />
 					</div>
 					<h3>Select You Vehicle</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
-						<img src={enquiry} alt="enquiry-icon" />
+						<img loading="eager" src={enquiry} alt="enquiry-icon" />
 					</div>
 					<h3>Submit an Enquiry</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
 				</div>
 				<div className={style['feature']}>
 					<div>
-						<img src={drive} alt="drive-icon" />
+						<img loading="eager" src={drive} alt="drive-icon" />
 					</div>
 					<h3>Pick Up & Drive</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>

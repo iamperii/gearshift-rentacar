@@ -8,7 +8,7 @@ const Header = () => {
 			<div className={style['header-wrapper']}>
 				<div className={style.nav}>
 					<img
-						loading="lazy"
+						loading="eager"
 						height="100vh"
 						src="https://cdn.prod.website-files.com/6677ef5c2f59c6148debf7e0/670c127ebfda26ab4b18882f_logo.svg"
 						alt="logo"

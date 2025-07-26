@@ -6,7 +6,7 @@ const Stats = ({ value, title }) => {
 	const [counter, setCounter] = useState(0);
 
 	useEffect(() => {
-		let start = 0;
+		let start = 1;
 		const end = value;
 		const duration = 1.5;
 		const stepTime = 50;

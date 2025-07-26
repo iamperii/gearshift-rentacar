@@ -3,7 +3,8 @@ import Founder from '../../components/About/Founder/Founder';
 import Stats from '../../components/Stats/Stats';
 import style from './about.module.scss';
 import OurFeatures from '../../components/OurFeatures/OurFeatures';
-import OurLocations from '../../components/Our-Locations/OurLocations';
+import OurLocations from '../../components/Locations/OurLocations';
+
 const About = () => {
 	return (
 		<>

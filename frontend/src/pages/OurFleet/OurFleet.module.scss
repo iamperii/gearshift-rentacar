@@ -1,8 +1,9 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
 .our-fleet {
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
-	padding: 100px 100px;
+	@include flex-column-gap(50px);
+	padding: $common-padding;
 }
 
 .car-cards {

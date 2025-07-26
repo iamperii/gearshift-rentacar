@@ -1,6 +1,7 @@
 @import './variables';
+
 @mixin button {
-	color: white;
+	color: #fff;
 	background-color: $vibrant-tangerine;
 	text-transform: uppercase;
 	border-radius: 5px;
@@ -22,4 +23,15 @@
 	align-items: center;
 	justify-content: center;
 	gap: $gap;
+}
+
+@mixin text-regular-lg {
+  font-weight: 500;
+  line-height: 30px;
+}
+
+@mixin flex-column-gap($gap: 0px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
 }

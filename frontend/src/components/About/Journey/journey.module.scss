@@ -1,26 +1,53 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
 .journey {
 	display: flex;
-	padding: 100px;
+	padding: $common-padding;
 	gap: 200px;
+	
 	img {
 		width: 576px;
 		height: 576px;
 		border-radius: 10px;
 	}
+	
 	.journey-content {
-		display: flex;
-		flex-direction: column;
-		gap: 100px;
+		@include flex-column-gap(100px);
 		align-self: center;
 		p {
 			color: #8d8d91;
-			font-weight: 500;
-			line-height: 30px;
+			@include text-regular-lg;
 		}
 		h1 {
 			line-height: 44px;
 			font-size: 32px;
 			font-weight: 600;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.journey {
+		gap: 2rem;
+
+		img {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.journey {
+		padding: 2rem 1rem;
+
+		.journey-content {
+			h1 {
+				font-size: 1.5rem;
+			}
+			p {
+				font-size: 0.95rem;
+			}
 		}
 	}
 }

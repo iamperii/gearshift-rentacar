@@ -1,3 +1,6 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
 .title {
 	font-size: 20px;
 	text-align: center;
@@ -27,9 +30,7 @@
 }
 .btnContainer {
 	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
+	@include flex-column-gap(16px);
 }
 .signContainer{
 	align-self: center;

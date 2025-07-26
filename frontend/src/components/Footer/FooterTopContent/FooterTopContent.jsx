@@ -10,7 +10,7 @@ const FooterTopContent = () => {
 			<div className={style.footerTopContent}>
 				<div className={style['footer-logo-social']}>
 					<img
-						loading="lazy"
+						loading="eager"
 						height="100vh"
 						src="https://cdn.prod.website-files.com/6677ef5c2f59c6148debf7e0/670c127ebfda26ab4b18882f_logo.svg"
 						alt="logo"

@@ -1,8 +1,9 @@
 import FeaturedCars from '../Featured-Cars/FeaturedCars';
-import OurLocations from '../Our-Locations/OurLocations';
+import OurLocations from '../Locations/OurLocations';
 import OurFeatures from '../OurFeatures/OurFeatures';
 import Stats from '../Stats/Stats';
 import style from './home.module.scss';
+
 const Home = () => {
 	return (
 		<>

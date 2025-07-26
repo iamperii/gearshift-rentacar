@@ -5,5 +5,13 @@
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Roboto';
+	font-family: Thicccboi,sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Thicccboi';
+  src: url('../src/fonts/TTF/THICCCBOI-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

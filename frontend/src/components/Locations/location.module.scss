@@ -1,0 +1,24 @@
+@import '../../styles/_variables';
+
+.location-container{
+	padding: 100px;
+	background-color: $secondary-bg;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	img{
+		border-radius:10px;
+	}
+	.location-left{
+		width: 40%;
+	}
+	h1{
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+	.location-desc{
+		font-weight: 500;
+		line-height: 30px;
+		color:#8d8d91;
+	}
+}

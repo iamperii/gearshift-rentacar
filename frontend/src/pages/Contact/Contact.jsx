@@ -2,11 +2,14 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import style from './contact.module.scss';
 import { Facebook, Instagram, Mail, Phone, Twitter } from 'lucide-react';
+
 const Contact = () => {
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		toast.success('🎉 Form submited successfully!');
 	};
+	
 	return (
 		<>
 			<section className={style.contact}>

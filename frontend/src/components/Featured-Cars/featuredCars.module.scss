@@ -3,19 +3,63 @@
 
 .featuredCtn {
 	padding: 100px;
-	display: flex;
-	flex-direction: column;
-	gap: 50px;
+	@include flex-column-gap(50px);
 	background-color: #f5f5f5;
 }
+
 .show-button {
 	@include button;
 }
+
 .featuredHead {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	h2 {
+		font-size: 2rem;
+	}
 }
-.car-cards{
+
+.car-cards {
 	display: flex;
 	gap: 20px;
+}
+
+@media (max-width: 1024px) {
+	.featuredCtn {
+		padding: 60px;
+		gap: 40px;
+	}
+
+	.featuredHead h2 {
+		font-size: 1.8rem;
+	}
+
+	.car-cards {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.featuredCtn {
+		padding: 40px 20px;
+		gap: 30px;
+	}
+
+	.featuredHead {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+
+	.car-cards {
+		flex-direction: column;
+		gap: 16px;
+	}
 }

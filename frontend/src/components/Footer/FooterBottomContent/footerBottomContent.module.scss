@@ -1,4 +1,5 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins';
 .footer-nav {
 	li {
 		list-style: none;
@@ -14,9 +15,7 @@
 			color: $vibrant-tangerine;
 		}
 	}
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+@include flex-column-gap(20px);
 }
 h2 {
 	margin-bottom: 20px;

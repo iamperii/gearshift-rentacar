@@ -25,7 +25,7 @@ const Journey = () => {
 						</p>
 					</div>
 				</div>
-				<img src={cars} alt="cars" />
+				<img src={cars} alt="cars" loading="eager" />
 			</div>
 		</>
 	);

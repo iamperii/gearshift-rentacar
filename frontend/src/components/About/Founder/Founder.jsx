@@ -6,7 +6,7 @@ const Founder = () => {
 		<>
 			<div>
 				<div className={style.founder} data-aos="fade-up">
-					<img src={founder} alt="founder-image" />
+					<img src={founder} alt="founder-image" loading="eager" />
 					<div className={style['founder-content']}>
 						<div>
 							<h1>Meet Our Founder</h1>

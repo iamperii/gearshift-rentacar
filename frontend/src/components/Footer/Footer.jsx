@@ -29,24 +29,30 @@ const Footer = () => {
 							{ name: 'Features Template', to: '/features' },
 						]}
 					/>
-					<FooterBottomContent
-						title="Get in touch"
-						links={[
-							{ name: '+971 12 345 6789 ', to: '/cars-template' },
-							{ name: 'info@gearshift.ae', to: '/car-types' },
-							{
-								name: '123 Innovation Street, Downtown Dubai, Dubai, UAE',
-								to: '/car-locations',
-							},
-						]}
-					/>
+					<div className={style['footer-links']}>
+						<h2>Get In Touch</h2>
+						<ul className={style['footer-nav']}>
+							<li>
+								<a href="tel:+971 12 345 6789">+971 12 345 6789</a>
+							</li>
+							<li>
+								<a href="mailto:info@gearshift.ae">info@gearshift.ae</a>
+							</li>
+							<li>
+								<a href="google.com/maps/place/Downtown+Dubai+-+Dubai+-+UAE/@25.1941469,55.2585424,15z/data=!4m2!3m1!1s0x3e5f682f700cf983:0xb5cc58b076c0b904?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D">
+									123 Innovation Street,
+									<br /> Downtown Dubai, Dubai, UAE
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<hr />
 				<div className={style.copyright}>
 					<p>
-						Copyright © GearShift | Designed by{' '}
-						<a target="_blank" href="https://github.com/iamperii">
-							M.Peri
+						Copyright © GearShift | Prepared by{' '}
+						<a href="https://www.github.com/iamperii">
+							<span>Memmedova Peri</span>
 						</a>
 					</p>
 				</div>

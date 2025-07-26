@@ -9,6 +9,8 @@ import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import ForgotPassword from './pages/ForgotPassword';
 import CarDetails from './pages/CarDetails/CarDetails';
+import NotFound from './pages/NotFound/NotFound';
+import LocationDetails from './pages/LocationDetails';
 
 function App() {
 	return (
@@ -24,6 +26,8 @@ function App() {
 					<Route path="/our-fleet" element={<OurFleet />} />
 					<Route path="/forgot-password" element={<ForgotPassword />} />
 					<Route path="/cars/:name" element={<CarDetails />} />
+					<Route path="/locations/:name" element={<LocationDetails />} />
+					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>
 		</>

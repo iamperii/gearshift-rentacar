@@ -37,9 +37,8 @@ const CarDetails = () => {
 		}
 	};
 
-	
 	const closeModal = () => {
-		setShowModal(false); 
+		setShowModal(false);
 	};
 
 	return (
@@ -50,13 +49,13 @@ const CarDetails = () => {
 				<div className={style['left-section']}>
 					<div className={style['image-section']}>
 						<div>
-							<img src={carImg} alt="" />
+							<img loading="eager" src={carImg} alt="" />
 						</div>
 						<div className={style['image-section-bottom']}>
-							<img src={carImg} alt="" />
-							<img src={carImg} alt="" />
-							<img src={carImg} alt="" />
-							<img src={carImg} alt="" />
+							<img loading="eager" src={carImg} alt="" />
+							<img loading="eager" src={carImg} alt="" />
+							<img loading="eager" src={carImg} alt="" />
+							<img loading="eager" src={carImg} alt="" />
 						</div>
 					</div>
 
@@ -94,32 +93,32 @@ const CarDetails = () => {
 
 						<div className={style['info-icons']}>
 							<div className={style['info-icon']}>
-								<img src={speedImg} alt="" />
+								<img loading="eager" src={speedImg} alt="" />
 								<p>{info.speed}</p>
 							</div>
 
 							<div className={style['info-icon']}>
-								<img src={automaticImg} alt="" />
+								<img loading="eager" src={automaticImg} alt="" />
 								<p>Automatic</p>
 							</div>
 
 							<div className={style['info-icon']}>
-								<img src={seatsImg} alt="" />
+								<img loading="eager" src={seatsImg} alt="" />
 								<p>{info.seats}</p>
 							</div>
 
 							<div className={style['info-icon']}>
-								<img src={baggageImg} alt="" />
+								<img loading="eager" src={baggageImg} alt="" />
 								<p>{info.baggage}</p>
 							</div>
 
 							<div className={style['info-icon']}>
-								<img src={yearImg} alt="" />
+								<img loading="eager" src={yearImg} alt="" />
 								<p>2024</p>
 							</div>
 
 							<div className={style['info-icon']}>
-								<img src={typeImg} alt="" />
+								<img loading="eager" src={typeImg} alt="" />
 								<p>SUV</p>
 							</div>
 						</div>
@@ -183,37 +182,61 @@ const CarDetails = () => {
 							<h1 className={style.featuresTitle}>Features</h1>
 							<div className={style['car-features']}>
 								<div className={style['car-feature']}>
-									<img src={bluetoothImg} alt="Bluetooth feature" />
+									<img
+										loading="eager"
+										src={bluetoothImg}
+										alt="Bluetooth feature"
+									/>
 									<p>Bluetooth</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={cruiseImg} alt="Cruise Control feature" />
+									<img
+										loading="eager"
+										src={cruiseImg}
+										alt="Cruise Control feature"
+									/>
 									<p>Cruise Control</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={gpsImg} alt="Built-in GPS feature" />
+									<img
+										loading="eager"
+										src={gpsImg}
+										alt="Built-in GPS feature"
+									/>
 									<p>Built-in GPS</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={cameraImg} alt="Rear Camera feature" />
+									<img
+										loading="eager"
+										src={cameraImg}
+										alt="Rear Camera feature"
+									/>
 									<p>Rear Camera</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={chargingImg} alt="Wireless Charging feature" />
+									<img
+										loading="eager"
+										src={chargingImg}
+										alt="Wireless Charging feature"
+									/>
 									<p>Wireless Charging</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={sunroofImg} alt="Sunroof feature" />
+									<img loading="eager" src={sunroofImg} alt="Sunroof feature" />
 									<p>Sunroof</p>
 								</div>
 
 								<div className={style['car-feature']}>
-									<img src={sensorsImg} alt="Parking Sensors feature" />
+									<img
+										loading="eager"
+										src={sensorsImg}
+										alt="Parking Sensors feature"
+									/>
 									<p>Parking Sensors</p>
 								</div>
 							</div>
